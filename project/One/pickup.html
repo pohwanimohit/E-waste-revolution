@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Messages | Firebase</title>
+    <link rel="stylesheet" href="contactForm.css">
+</head>
+
+<body>
+    <div class="container">
+        <form action="" id="contactForm">
+            <div class="alert">Your message sent</div>
+            <pre><h2>                  E-waste pickup</h2><br></pre>
+
+            <div class="inputBox">
+                <input type="text" id="name" placeholder="Your name...." required />
+            </div><br>
+
+            <div class="inputBox">
+                <input type="email" id="emailid" placeholder="Your Email....." required />
+            </div><br>
+
+            <div class="inputBox">
+                <input type="tel" id="mobileNumber" placeholder="Your Mobile Number....." required />
+            </div><br>
+
+            <label>Category</label><br><br>
+            <div class="radio-group">
+                <input type="radio" id="household" name="category" value="Household" required>
+                <label for="household">Household</label>
+                <input type="radio" id="corporate" name="category" value="Corporate" required>
+                <label for="corporate">Corporate</label>
+            </div><br>
+
+            <div class="inputBox">
+                <input type="text" id="location" placeholder="Your Location....." required />
+            </div><br>
+
+            <div class="inputBox">
+                <input type="text" id="ewasteType" placeholder="Your E-Waste type....." required />
+            </div><br>
+
+            <!-- New Weight Input Field -->
+            <div class="inputBox">
+                <input type="number" id="weight" placeholder="E-Waste Weight (min 10kg)....." required />
+            </div><br>
+
+            <div class="inputBox">
+                <textarea id="msgContent" cols="30" rows="10" placeholder="Message"></textarea>
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+        <div id="success-message" style="display: none;">
+            <p>✅ Your request has been submitted successfully!</p>
+            <a href="track.html" class="btn btn-success">🚛 Track Vehicle Service</a>
+        </div>
+    </div>
+    
+    <script>
+        document.getElementById("ewaste-form").addEventListener("submit", function(event) {
+            event.preventDefault(); // Prevent actual form submission
+
+            // Simulate form submission process (AJAX can be added for backend integration)
+            setTimeout(() => {
+                document.getElementById("ewaste-form").style.display = "none"; // Hide the form
+                document.getElementById("success-message").style.display = "block"; // Show success message and button
+            }, 1000);
+        });
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/firebase/7.14.1-0/firebase.js"></script>
+    <script src="contactForm.js"></script>
+</body>
+
+</html>

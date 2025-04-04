@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login / Sign Up - E-Waste</title>
+    <link rel="stylesheet" href="login.css">
+    <!-- Firebase App (the core Firebase SDK) -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app.js"></script>
+    <!-- Firebase Authentication -->
+    <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth.js"></script>
+    <script>
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+            apiKey: "AIzaSyBBrvSFDg1nF-BZZgrYOiT06CgsUFG1PHM",
+            authDomain: "login-520f7.firebaseapp.com",
+            databaseURL: "https://login-520f7-default-rtdb.firebaseio.com",
+            projectId: "login-520f7",
+            storageBucket: "login-520f7.firebasestorage.app",
+            messagingSenderId: "760021294852",
+            appId: "1:760021294852:web:19223495af66b203e3ba51"
+          };
+
+        // Initialize Firebase
+        const app = firebase.initializeApp(firebaseConfig);
+        const auth = firebase.auth();
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h2 id="form-title">Login</h2>
+            <form id="auth-form">
+                <div class="input-group">
+                    <input type="email" id="email" placeholder="Email" required>
+                </div>
+                <div class="input-group">
+                    <input type="password" id="password" placeholder="Password" required>
+                </div>
+                <div class="input-group" id="confirm-password-group" style="display: none;">
+                    <input type="password" id="confirm-password" placeholder="Confirm Password">
+                </div>
+                <button type="submit" id="submit-btn">Login</button>
+                <p id="toggle-text">Don't have an account? <a href="#" id="toggle-link">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/11.4.0/firebase-app.js"></script>
+    
+    <script src="login.js"></script>
+</body>
+
+</html>

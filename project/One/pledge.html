@@ -1,0 +1,46 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pledge to Recycle</title>
+    <link rel="stylesheet" href="pledge.css">
+
+</head>
+
+<body>
+
+    <section id="pledge">
+        <h2>Pledge for a Cleaner Planet</h2>
+        <p>Select the pledges you commit to:</p>
+
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeRecycle">
+            <label for="pledgeRecycle">I pledge to recycle e-waste responsibly.</label>
+        </div>
+
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeReduce">
+            <label for="pledgeReduce">I pledge to reduce electronic waste.</label>
+        </div>
+
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeDispose">
+            <label for="pledgeDispose">I pledge to properly dispose of e-waste.</label>
+        </div>
+
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeReuse">
+            <label for="pledgeReuse">I pledge to reuse electronics whenever possible.</label>
+        </div>
+
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeAwareness">
+            <label for="pledgeAwareness">I pledge to spread awareness about e-waste management.</label>
+        </div>
+
+        <button onclick="takePledge()">Submit Pledge</button>
+        <p id="pledgeMessage"></p>
+    </section>
+    <script src="pledge.js"></script>
+
+
+</body></html>
