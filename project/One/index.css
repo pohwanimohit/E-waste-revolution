@@ -1,0 +1,327 @@
+body,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.card {
+  justify-content: center;
+  align-content: center;
+}
+
+header {
+  background-color:#002a54ef;
+  color: #fff;
+  padding: 25px 20px 25px 50px;
+  text-align: center;
+  position: relative;
+}
+
+header h1 {
+  text-shadow: 5px 3px 5px rgb(0, 0, 0);
+}
+
+#hero {
+  margin: 80px 0px;
+}
+
+#e-waste {
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  position: absolute;
+  top: 13%;
+  left: 10%;
+}
+
+nav {
+  background-color: #EAEAEA;
+  padding: 10px;
+  position: sticky;
+  top: 0%;
+  z-index: 1;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+}
+
+nav ul li a {
+  color: #fff;
+  display: inline-block;
+  padding: 10px;
+  text-decoration: none;
+}
+
+/* Hero Section */
+.hero {
+  background: url(https://img.freepik.com/premium-photo/old-electronic-devices-dark-background-concept-recycling-disposal-electronic-waste-copy-space_76255-1810.jpg);
+  background-size: cover;
+  height: 700px;
+  width : 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: wheat;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin: 10px 0;
+  color: black;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+  color:black
+}
+
+.btn {
+  background: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.btn:hover {
+  background: #2ecc71;
+}
+
+/* Services Section */
+.services {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px 0;
+  background: white;
+}
+
+.service {
+  width: 250px;
+  text-align: center;
+  padding: 20px;
+  margin: 20px;
+  background: #ecf0f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.service i {
+  font-size: 40px;
+  color: #27ae60;
+}
+
+.service h3 {
+  margin: 10px 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Categories Section */
+.categories {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #E0E0E0;
+  padding: 30px;
+}
+
+.category {
+  width: 200px;
+  text-align: center;
+  padding: 20px;
+  background: white;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.category i {
+  font-size: 40px;
+  color: green;
+}
+
+.category h3 {
+  margin: 10px 0;
+}
+
+.category ul {
+  list-style: none;
+  padding: 0;
+}
+
+.category ul li {
+  font-size: 14px;
+  color: #555;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out, background-color 0.3s;
+}
+
+.service:hover {
+  transform: scale(1.05);
+  background-color: #e0f7e9; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+section {
+  padding: 40px;
+  text-align: center;
+}
+
+.service {
+  margin-bottom: 40px;
+}
+.service img {
+  width: 200px;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+/*footer*/
+footer {
+  background-color: #032548ae;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content p {
+  margin-bottom: 10px;
+}
+
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.social-links li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-links a {
+  color: #fff;
+  font-size: 20px;
+}
+
+.social-links a:hover {
+  color: #ccc;
+}
+.nav-class a:hover {
+  text-decoration: underline;
+  color: white;
+  font-weight: bold;
+  background-color: #02356cc1;
+  padding: 8px 12px;
+  border-radius: 10px;
+}
+.nav-class {
+  margin-left: 20px;
+}
+.e-aware {
+  background-color: rgba(84, 84, 84, 0.053);
+  text-align: center;
+  padding: 30px 35px;
+  margin: 140px 100px 80px 100px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px black;
+}
+.headings {
+  text-shadow: 1px 1px 3px black;
+  color: #0b6ed1ef;
+}
+#welcome-text {
+  width: 55%;
+  overflow: hidden;
+  display: inline-block;
+  border-right: 1px solid #000;
+  white-space: nowrap;
+  margin: 0 auto;
+  letter-spacing: 4px;
+  animation: typing 4.5s steps(40, end);
+}
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 55%;
+  }
+}

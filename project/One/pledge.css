@@ -1,0 +1,59 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 50px;
+    background-color: #f4f4f4;
+}
+
+#pledge {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: auto;
+}
+
+h2 {
+    color: #2e7d32;
+}
+
+.pledge-option {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    margin: 10px 0;
+    font-size: 16px;
+}
+
+.pledge-option input {
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+button {
+    background-color: #2e7d32;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1b5e20;
+}
+
+button:disabled {
+    background-color: gray;
+    cursor: not-allowed;
+}
+
+#pledgeMessage {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2e7d32;
+    margin-top: 15px;
+}

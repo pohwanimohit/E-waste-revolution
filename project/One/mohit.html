@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Awareness & Disposal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>E-Waste Awareness & Disposal Portal</h1>
+        <p>Learn, Act, and Recycle for a Greener Future!</p>
+    </header>
+
+    <section id="statistics">
+        <h2>Annual E-Waste Generated</h2>
+        <p>Over <strong>50 million</strong> tons of e-waste are generated every year worldwide!</p>
+    </section>
+
+    <section id="collection-centers" class="container">
+        <h2>Find E-Waste Collection Centers</h2>
+        <select id="stateSelect">
+            <option value="">Select your state</option>
+        </select>
+        <button onclick="searchCenters()">Search</button>
+        <div id="results"></div>
+    </section>
+
+    <section id="quiz">
+        <h2>Test Your E-Waste Knowledge</h2>
+        <p id="question">Loading question...</p>
+        <button onclick="checkAnswer(true)">True</button>
+        <button onclick="checkAnswer(false)">False</button>
+        <p id="score">Score: 0</p>
+    </section>
+
+    <section id="pledge" class="container">
+        <h2>Pledge for a Cleaner Planet</h2>
+        <p>Select the pledges you commit to:</p>
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeRecycle">
+            <label for="pledgeRecycle">I pledge to recycle e-waste responsibly.</label>
+        </div>
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeReduce">
+            <label for="pledgeReduce">I pledge to reduce electronic waste.</label>
+        </div>
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeDispose">
+            <label for="pledgeDispose">I pledge to properly dispose of e-waste.</label>
+        </div>
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeReuse">
+            <label for="pledgeReuse">I pledge to reuse electronics whenever possible.</label>
+        </div>
+        <div class="pledge-option">
+            <input type="checkbox" id="pledgeAwareness">
+            <label for="pledgeAwareness">I pledge to spread awareness about e-waste management.</label>
+        </div>
+        <button onclick="takePledge()">Submit Pledge</button>
+        <p id="pledgeMessage"></p>
+    </section>
+
+    <section id="contact" class="container">
+        <h2>Contact Us</h2>
+        <form onsubmit="return validateForm()">
+            <input type="text" id="name" placeholder="Your Name">
+            <input type="email" id="email" placeholder="Your Email">
+            <textarea id="message" placeholder="Your Message"></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

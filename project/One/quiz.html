@@ -1,0 +1,27 @@
+<html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Waste Quiz</title>
+    <link rel="stylesheet" href="quiz.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+        <h1>Test Your E-Waste Knowledge</h1>
+        <p id="question">Loading...</p>
+
+        <div class="buttons">
+            <button onclick="checkAnswer(true)">True</button>
+            <button onclick="checkAnswer(false)">False</button>
+        </div>
+
+        <p>Score: <span id="score">0</span></p>
+
+        <button id="restart" onclick="restartQuiz()">Restart Quiz</button>
+    </div>
+
+    <script src="quiz.js"></script>
+
+
+</body></html>
